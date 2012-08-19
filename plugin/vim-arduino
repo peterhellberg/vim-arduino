@@ -83,4 +83,5 @@ java \
   -d32 \
   -Darduino.sketchbook="$sketchbook" \
   -Djava.awt.headless=true \
-  -jar "$DIR/vim-arduino-cli.jar" "$switch" "$pde_file" "$port" "$board"
+  -jar "$DIR/vim-arduino-cli.jar" \
+  "$switch" "$pde_file" "$port" "$board" > /dev/null 2>&1
